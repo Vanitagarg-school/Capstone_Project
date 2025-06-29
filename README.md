@@ -15,7 +15,7 @@ How do socioeconomic and demographic factors impact Grade 8 math achievement in 
 Data Sources:
   - [NAEP TUDA District-Level Results](https://www.nationsreportcard.gov/ndecore/xplore/NDE)
   - [NCES EDGE Socioeconomic Data](https://nces.ed.gov/programs/edge/)
-Dataset: `EDGE_Cleaned_For_Notebook.csv`
+Dataset: EDGE_Studentperf_socioeconomic_features.csv(https://github.com/Vanitagarg-school/Capstone_Project/blob/main/EDGE_Studentperf_socioeconomic_features.csv)
 Total Observations: 305 school districts
 Key Features:
   - Economic Disadvantage (% Eligible for NSLP, % Econ Disadvantaged)
