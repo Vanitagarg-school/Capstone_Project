@@ -26,9 +26,8 @@ Key Features:
   - Race/Ethnicity composition
   - Average Math Scores and Score Percentiles (10th to 90th)
     
-## Jupyter Notebook
-
-    https://github.com/Vanitagarg-school/Capstone_Project/blob/main/CapstoneProject_SocioeconomicFactor_StudentPerformance.ipynb
+## Jupyter Notebook 
+https://github.com/Vanitagarg-school/Capstone_Project/blob/main/CapstoneProject_SocioeconomicFactor_StudentPerformance.ipynb
     
 ## Data Cleaning Summary
 
