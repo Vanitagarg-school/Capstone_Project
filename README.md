@@ -28,7 +28,9 @@ Key Features:
   - Average Math Scores and Score Percentiles (10th to 90th)
     
 ## Jupyter Notebook 
-https://github.com/Vanitagarg-school/Capstone_Project/blob/main/CapstoneProject_SocioeconomicFactor_StudentPerformance.ipynb
+Before Module24 [https://github.com/Vanitagarg-school/Capstone_Project/blob/main/CapstoneProject_SocioeconomicFactor_StudentPerformance.ipynb]
+
+Final Module 24 Notebook (includes EDA work as well) (https://github.com/Vanitagarg-school/Capstone_Project/blob/main/CapstoneProject_SocioeconomicFactor_StudentPerformance_FinalModule24.ipynb)
     
 ## Data Cleaning Summary
 
