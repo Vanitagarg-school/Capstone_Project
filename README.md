@@ -60,6 +60,8 @@ Evaluation Metrics:
   R-squared: 0.6520134305921936
   RMSE: 6.198129456779874
 
+## Module 24
+
 ## Modeling Approach
 
 We tested four different regression models to predict average student math scores using community-level data.
