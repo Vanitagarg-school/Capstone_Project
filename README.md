@@ -8,13 +8,14 @@ The primary goal of this phase (Module 20) is to perform exploratory data analys
 
 ## Research Question
 
-How do socioeconomic and demographic factors impact Grade 8 math achievement in urban school districts?
+How do various socioeconomic indicators—such as poverty levels, parental education, and racial/ethnic composition—impact student achievement in 8th-grade mathematics? Which factors are most predictive of performance?
 
 ## Dataset Description
 
 Data Sources:
   - [NAEP TUDA District-Level Results](https://www.nationsreportcard.gov/ndecore/xplore/NDE)
   - [NCES EDGE Socioeconomic Data](https://nces.ed.gov/programs/edge/)
+    Merged TUDA and EDGE datasets using district name and year.
 
 Dataset: EDGE_Studentperf_socioeconomic_features.csv(https://github.com/Vanitagarg-school/Capstone_Project/blob/main/EDGE_Studentperf_socioeconomic_features.csv)
 
@@ -58,3 +59,34 @@ Target: Average Math Score (Avg_Score)
 Evaluation Metrics:
   R-squared: 0.6520134305921936
   RMSE: 6.198129456779874
+
+## Modeling Approach
+
+We tested four different regression models to predict average student math scores using community-level data.
+
+| Model                   | R² Score | RMSE   | MAE   | Training Time |
+|------------------------|----------|--------|-------|----------------|
+| Linear Regression       | 0.6520   | 6.20   | 4.97  | 0.0050 seconds |
+| Ridge Regression        | 0.6518   | 6.20   | 4.97  | 0.0023 seconds |
+| Decision Tree Regressor| 0.3836   | 8.25   | 5.81  | 0.0028 seconds |
+| Random Forest Regressor| 0.6442   | 6.27   | 4.49  | 0.1889 seconds |
+
+### What the Results Mean
+- Linear and Ridge Regression performed best, offering strong predictive power and simplicity.
+- Random Forest had slightly lower accuracy (R²) but delivered the lowest MAE — meaning its predictions were closer on average.
+- Decision Tree underperformed overall and had higher errors, likely due to limited depth and over-simplification.
+
+## Key Takeaways
+#### Economic Disadvantage: Districts with higher percentages of students eligible for free or reduced lunch tend to have lower math scores.
+#### Parental Education: Higher levels of parental education correlate with better student performance.
+
+## Visual Summary
+  - Actual vs. Predicted Plot: Demonstrated that predicted values closely align with actual scores.
+  - Residual Plot: Showed that errors are randomly distributed, indicating a good model fit.
+  - Distribution of Residuals: Confirmed that residuals follow a normal distribution, suggesting consistent model performance.
+  - Feature Importance (Random Forest): Identified key factors such as economic disadvantage and parental education as significant predictors.
+
+## Next Steps
+  - Explore causal relationships using longitudinal data.
+  - Expand the dataset to include rural and suburban districts.
+  - Develop interactive dashboards for district-level decision-makers.
