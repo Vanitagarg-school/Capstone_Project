@@ -78,15 +78,21 @@ We tested four different regression models to predict average student math score
 - Random Forest had slightly lower accuracy (R²) but delivered the lowest MAE — meaning its predictions were closer on average.
 - Decision Tree underperformed overall and had higher errors, likely due to limited depth and over-simplification.
 
-## Key Takeaways
-#### Economic Disadvantage: Districts with higher percentages of students eligible for free or reduced lunch tend to have lower math scores.
-#### Parental Education: Higher levels of parental education correlate with better student performance.
-
 ## Visual Summary
   - Actual vs. Predicted Plot: Demonstrated that predicted values closely align with actual scores.
   - Residual Plot: Showed that errors are randomly distributed, indicating a good model fit.
   - Distribution of Residuals: Confirmed that residuals follow a normal distribution, suggesting consistent model performance.
   - Feature Importance (Random Forest): Identified key factors such as economic disadvantage and parental education as significant predictors.
+  - Ridge Coefficients: Confirmed that community hardship often pulls scores down.
+
+
+## Key Takeaways - What We Learned
+- Students in districts with higher poverty and fewer college-educated parents tend to score lower in math.
+- Income and parental education are key predictors.
+- Simple models (like Linear Regression) worked surprisingly well.
+- Advanced models (like Random Forest) helped explain which factors mattered most, even if they weren’t more accurate.
+#### Economic Disadvantage: Districts with higher percentages of students eligible for free or reduced lunch tend to have lower math scores.
+#### Parental Education: Higher levels of parental education correlate with better student performance.
 
 ## Next Steps
   - Explore causal relationships using longitudinal data.
